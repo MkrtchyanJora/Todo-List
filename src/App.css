@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Todo-input-block{
+    display: block;
+    width: 500px;
+    border: 2px solid #EBEBEB;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+     box-shadow: 5px 5px 8px 5px #EBEBEB;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Todo-input-block>input{
+    width: 70%;
+    border: none;
+    outline: none;
+   margin-top: 50px;
+   border: 2px solid #EBEBEB;
+   margin-bottom: 20px;
+   padding: 9px;
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Todo-block2{
+    position: absolute;
 }
 
-.App-link {
-  color: #61dafb;
+.Todo-items{
+    width: 500px;
+    position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Todo-items>input:checked{
+    width: 20px;
+    height: 20px;
+  
+}
+
+.Todo-items>input{
+    position: absolute;
+    top: 27px;
+    left: 50px;
+}
+
+.Todo-items>span{
+    position: absolute;
+    left: 97px;
+    top: 21px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Todo-icon{
+    margin-left: 370px;
+    margin-top: 24px;
+    color: #757575;
+}
+
+.Todo-Title{
+    background-color: #5E00B8;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
